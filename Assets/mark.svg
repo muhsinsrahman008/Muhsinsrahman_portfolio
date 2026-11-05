@@ -1,1 +1,25 @@
-
+​<svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 64 64" width="64" height="64">
+<defs>
+<linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#111A2B"/>
+<stop offset="100%" stop-color="#070810"/>
+</linearGradient>
+​<linearGradient id="orbitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#8BE9FF"/>
+<stop offset="100%" stop-color="#4A9DFF"/>
+</linearGradient>
+​<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+<feGaussianBlur stdDeviation="0.8" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</defs>
+​<rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGrad)" stroke="#1E2B42" stroke-width="1.2"/>
+​<g transform="rotate(-28 32 32)">
+<ellipse cx="32" cy="32" rx="23" ry="9" fill="none" stroke="url(#orbitGrad)" stroke-width="1.8" stroke-opacity="0.85"/>
+<circle cx="55" cy="32" r="2.2" fill="#8BE9FF" filter="url(#glow)"/>
+</g>
+​<path d="M 19 44 V 20 L 32 33 L 45 20 V 44" fill="none" stroke="#F8FAFC" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
